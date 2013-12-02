@@ -1,0 +1,393 @@
+/*
+Theme Name: iVan
+Theme URI: http://www.smargelov.ru;
+Description: Шаблон предназначен для использования исключительно в блоге Сергея Маргелова. Использование на любом другом ресурсе запрещено.
+Author: smargelov
+Author URI: http://smargelov.ru/
+Version: 1
+Text Domain: smargelov.com
+*/
+
+@import url(css/bootstrap.css);
+@import url(css/bootstrap-responsive.css);
+@import url(font/kelson.css);
+
+/* #####################
+	GLOBAL
+##################### */
+
+body {
+	background: #ECEAEA url(img/bg.png);
+	color: #374548;
+	font: 1.5em/1.5em 'kelson_s', Verdana, Arial, sans-serif;
+}
+a {
+	border-bottom: 1px solid #00F;
+	color: #374548;
+}
+a:visited {
+	border-bottom: 1px solid #9536CE;
+}
+a:hover,
+a:focus {
+	border-bottom: none;
+	text-decoration: none;
+}
+li {
+	margin-bottom: 0.3em;
+	line-height: 1.4em;
+}
+
+/* #####################
+	HEADER
+##################### */
+
+.header a,
+.postinfo a,
+.list a {
+	border-bottom: none;
+}
+.bigtitle {
+	margin-top: .5em;
+	font-size: 2.5em;
+	font-family: 'kelson_sans_ruregular', Verdana, Arial, sans-serif;
+	line-height: 1em;
+}
+.bigtitle a {
+	color: #e9e9e9;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+.smalltitle {
+	margin-bottom: 1em;
+	font-size: 1.6em;
+	line-height: .5em;
+}
+.smalltitle a {
+	color: #c4c4c4;
+}
+.topicon {
+	text-align: center;
+	font-size: 2em;
+}
+.topicon a {
+	display: inline-block;
+	margin-right: 0.5em;
+}
+input.search-query {
+	border-radius: 5px;
+}
+
+/* #####################
+	TOPNAV
+##################### */
+
+.topnav {
+	margin-bottom: 2em;
+	padding-top: 1em;
+	background-color: #B3B3B3;
+}
+.topnav li {
+	display: inline-block;
+	margin-right: 0.5em;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	line-height: 1.4em;
+}
+.topnav li a {
+	color: #E6E6E6;
+}
+.topnav li a:hover,
+.topnav li a:focus {
+	text-decoration: underline;
+	text-shadow: 0 0 1px rgba(0, 0, 150, .5);
+	font-weight: bold;
+}
+
+/* #####################
+	CONTENT
+##################### */
+
+h1,
+h2.list {
+	font-size: 1.7em;
+	line-height: 1.5em;
+}
+h2.list a {
+	color: #00F;
+}
+h2.list a:visited {
+	color: #3755CF;
+}
+h2.list a:hover,
+h2.list a:focus {
+	color: #005580;
+}
+.more-link {
+	color: #00F;
+	font-weight: bold;
+	float: right;
+}
+.more-link:hover {
+	border-bottom: 1px solid;
+}
+.more-link:visited {
+	color: #9536CE;
+}
+.post {
+	margin-bottom: 1.5em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #999;
+}
+.post p {
+	margin: 0 0 1em;
+	letter-spacing: .07rem;
+	word-spacing: 0.5rem;
+}
+.postinfo {
+	font-size: 0.8em;
+}
+.postinfo,
+.postinfo a {
+	color: #b3b3b3;
+}
+.postinfo a:hover,
+.postinfo a:focus {
+	border-bottom: 1px solid #D6CCFF;
+}
+.postinfo > span:before {
+	margin-right: .3em;
+	margin-left: 1em;
+	font-family: "icon-font-smargelov";
+}
+.postinfo > span:first-child:before {
+	margin-left: 0;
+}
+.postinfo > .postdate:before {
+	content: 'b';
+}
+.postinfo > .postcomment:before {
+	content: 'a';
+}
+.postinfo > .posttags:before {
+	content: 'c';
+}
+.post img,
+.post iframe {
+	box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+.post .notshadow {
+	box-shadow: none;
+}
+.aligncenter {
+	display: block;
+	margin: 1em auto;
+}
+.alignright {
+	float: right;
+	margin: 0 0 0.8em 1em;
+}
+.alignleft {
+	float: left;
+	margin: 0 1em 0.8em 0;
+}
+.alignright .alignright,
+.alignleft .alignleft,
+.aligncenter .aligncenter {
+	margin: 0;
+}
+.wp-caption-text {
+	color: #909090;
+	text-align: center;
+	font-size: 0.7em;
+}
+blockquote p {
+	color: #6F749F;
+	font-style: italic;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+.breadcrumb {
+	font-size: 0.7em;
+	line-height: 1em;
+	color: #949494;
+}
+.pager li > a {
+	font-size: 0.6em;
+	max-width: 40%;
+}
+.pager li > a > span {
+	color: #B3B3B3;
+} 
+.share42init {
+	margin: 0 auto;
+	text-align: center;
+}
+#share42 {
+	display: inline-block; 
+	padding: 6px 0 0 6px; 
+	background: #FFF; 
+	border: 1px solid #E9E9E9; 
+	border-radius: 4px;
+}
+#share42:hover {
+	background: #F6F6F6; 
+	border: 1px solid #D4D4D4; 
+	box-shadow: 0 0 5px #DDD;}
+#share42 a {
+	opacity: 0.5;
+	border-bottom: none;
+}
+#share42:hover a {
+	opacity: 0.7
+}
+#share42 a:hover {
+	opacity: 1
+}
+.adsence {
+	text-align: center;
+}
+.twitter-tweet {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+
+/* #####################
+	SIDEBAR
+##################### */
+
+.widget {
+	margin-bottom: 1em;
+}
+.follow-box {
+	margin: 0;
+}
+.follow-box li {
+	list-style: none;
+}
+.follow-box li a {
+	display:block;
+	background-color: #7472F6;
+	padding: .3em 0 .3em 0.5em;
+	font-size: 1.3em;
+	color: #D0D0D0;
+	border-bottom: none;
+}
+.follow-box li a:hover,
+.follow-box li a:focus {
+	background-color: #4E4BFC;
+	color: #DCDCDC;
+}
+.follow-box a i {
+	margin-right: 1em;
+}
+.widget h4 {
+	background-color: #999999;
+	color: #CCCCCC;
+	font-size: 1.1em;
+	font-weight: 300;
+	line-height: 2em;
+	text-align: center;
+}
+#wp-calendar {
+	width: 100%;
+	margin-bottom: 20px;
+}
+#wp-calendar th,
+#wp-calendar td {
+	padding: 8px 0;
+	font-size: .6em;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: top;
+	border-top: 1px solid #dddddd;
+}
+#wp-calendar th {
+	font-weight: bold;
+}
+#wp-calendar thead th {
+	vertical-align: bottom;
+}
+#wp-calendar caption + thead tr:first-child th,
+#wp-calendar caption + thead tr:first-child td,
+#wp-calendar colgroup + thead tr:first-child th,
+#wp-calendar colgroup + thead tr:first-child td,
+#wp-calendar thead:first-child tr:first-child th,
+#wp-calendar thead:first-child tr:first-child td {
+	border-top: 0;
+}
+#wp-calendar tbody + tbody {
+	border-top: 2px solid #dddddd;
+}
+#wp-calendar #next {
+	text-align: right;
+}
+.ad-block2 {
+	color: #666666;
+}
+.widget li {
+	font-size: 0.8em;
+	margin-bottom: 0.6em;
+}
+
+/* #####################
+	FOOTER
+##################### */
+
+.footer {
+	background-color: #464646;
+	padding: 0.6em 0 0.4em;
+}
+.footer p {
+	font-size: .5em;
+	line-height: 1.3em;
+	color: #B9B9B9;
+}
+.licenses a {
+	border-bottom: none;
+}
+.copy {
+	text-align: right;
+}
+.copy a {
+	color: #B4CDFB;
+}
+
+#infobox {
+	background-color: #E26B6B;
+	padding: 1em 10%;
+	text-align: center;
+	color:#e9ddaf;
+	position: relative;
+	display:none;
+}
+
+#close-button {
+	position:absolute;
+	top:0.7em;
+	right: 3%;
+	font-size: 1.5em;
+	color:#560C0C;
+	cursor: pointer;
+}
+
+#close-button:hover,
+#close-button:hover {
+	color:#9E2F2F;
+}
+
+/* #####################
+	RESPONSIVE STYLES
+##################### */
+
+@media (max-width: 767px) {
+	.post .alignleft,
+	.post .alignright {
+		display: block;
+		float: none;
+		margin: 1em auto;
+	}
+	.footer p {
+		text-align: center;
+	}	
+}

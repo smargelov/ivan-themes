@@ -1,0 +1,94 @@
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "icon-font-smargelov";
+  src:url("fonts/icon-font-smargelov.eot");
+  src:url("fonts/icon-font-smargelov.eot?#iefix") format("embedded-opentype"),
+    url("fonts/icon-font-smargelov.ttf") format("truetype"),
+    url("fonts/icon-font-smargelov.svg#icon-font-smargelov") format("svg"),
+    url("fonts/icon-font-smargelov.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "icon-font-smargelov";
+  content: attr(data-icon);
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none !important;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "icon-font-smargelov";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none !important;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.icon-bubble:before {
+  content: "a";
+}
+
+.icon-calendar:before {
+  content: "b";
+}
+
+.icon-tag:before {
+  content: "c";
+}
+
+.icon-search:before {
+  content: "s";
+}
+
+.icon-fb:before {
+  content: "f";
+}
+
+.icon-hh:before {
+  content: "h";
+}
+
+.icon-gp:before {
+  content: "g";
+}
+
+.icon-rss:before {
+  content: "r";
+}
+
+.icon-vk:before {
+  content: "v";
+}
+
+.icon-tw:before {
+  content: "t";
+}
+
+.icon-yt:before {
+  content: "y";
+}
+
+.icon-eye:before {
+  content: "e";
+}
+
