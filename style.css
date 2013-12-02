@@ -11,6 +11,8 @@ Text Domain: smargelov.com
 @import url(css/bootstrap.css);
 @import url(css/bootstrap-responsive.css);
 @import url(font/kelson.css);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic-ext);
+
 
 /* #####################
 	GLOBAL
@@ -19,7 +21,7 @@ Text Domain: smargelov.com
 body {
 	background: #ECEAEA url(img/bg.png);
 	color: #374548;
-	font: 1.5em/1.5em 'kelson_s', Verdana, Arial, sans-serif;
+	font: 1.5em/1.5em 'PT Sans Narrow', Verdana, Arial, sans-serif;
 }
 a {
 	border-bottom: 1px solid #00F;
@@ -36,6 +38,10 @@ a:focus {
 li {
 	margin-bottom: 0.3em;
 	line-height: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
 }
 
 /* #####################
@@ -99,8 +105,7 @@ input.search-query {
 .topnav li a:hover,
 .topnav li a:focus {
 	text-decoration: underline;
-	text-shadow: 0 0 1px rgba(0, 0, 150, .5);
-	font-weight: bold;
+	color: #DBDBDB;
 }
 
 /* #####################
@@ -124,7 +129,7 @@ h2.list a:focus {
 }
 .more-link {
 	color: #00F;
-	font-weight: bold;
+	font-weight: 100;
 	float: right;
 }
 .more-link:hover {
@@ -140,8 +145,7 @@ h2.list a:focus {
 }
 .post p {
 	margin: 0 0 1em;
-	letter-spacing: .07rem;
-	word-spacing: 0.5rem;
+	letter-spacing: .04rem;
 }
 .postinfo {
 	font-size: 0.8em;
@@ -339,7 +343,7 @@ blockquote p {
 	padding: 0.6em 0 0.4em;
 }
 .footer p {
-	font-size: .5em;
+	font-size: .6em;
 	line-height: 1.3em;
 	color: #B9B9B9;
 }
